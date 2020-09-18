@@ -4,7 +4,5 @@ const RequestSchema = new mongoose.Schema({
     email: {type: String, required: true, unique: true},
     count: {type: Number, default : 0, required: false},
     date: {type: Date, default: Date.now}
-
 });
-
 module.exports = Request = mongoose.model('request', RequestSchema);
