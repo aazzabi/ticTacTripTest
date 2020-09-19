@@ -8,7 +8,6 @@ router.get('/', TicTacController.getAll);
 router.get('/:email', TicTacController.getByEmail);
 router.post('/justify',TokenExist , TicTacController.justify);
 router.post('/token',
-    [check("email", "Please enter a valid Email").isEmail()],
     TicTacController.generateToken
 );
 
