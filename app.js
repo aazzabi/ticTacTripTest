@@ -5,7 +5,8 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-const url = "mongodb://localhost:27017/tictactrip";
+// const url = "mongodb://localhost:27017/tictactrip";
+const url = "mongodb+srv://admin:admin@cluster0.nestw.mongodb.net/tictactrip";
 mongoose.connect(url, { useNewUrlParser: true });
 // mongoose.set({ usecreateIndexes: true });
 var mongo = mongoose.connection;
