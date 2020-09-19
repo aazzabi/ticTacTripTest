@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+            border: 1px black solid;
+            width: 70%;
+            margin-bottom: 50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome to TicTacTrip Test : </h1>
+    <h2>My name is Arafet Azzabi and that how the app works</h2>
+    - For the database I worked with MongoDB Atlas to deploy the database.<br>
+    - For that you can use this app, you should <a href="https://www.postman.com/downloads/">install</a> Postman.<br><br>
+    <ul>
+    <li> First, you should access to this link <b>"https://tictactrip-arafet.herokuapp.com/api/token"</b>
+    as POST request with a JSON body {"email": "foo@bar.com"} : </li>
+    <img src="images/1.png">
+    <br>
+
+    <li>
+        Use this <b>token</b> to justify the text : with a header attribute named "token" <br>
+        <b>"https://tictactrip-arafet.herokuapp.com/api/justify"</b>
+     </li>
+    <img src="images/5.png">
+    <img src="images/3.png">
+
+    <li><b>If we don't use this token, we got an error "No token, authorisation denied "</b></li>
+    <img src="images/2.png">
+
+    <li><b>If the number of words allowed remaining (for the last 24 hours*) , we got an error "402 Payment Required"</b></li>
+    <h6>* The limit rate will be set to 0, in the next login ( 24 hours after the first login)</h6>
+    <img src="images/4.png">
+
+
+</body>
+</html>
